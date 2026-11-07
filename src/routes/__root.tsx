@@ -78,14 +78,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mohamed Yusuf | Product Management Portfolio" },
+      { name: "description", content: "Mohamed Yusuf's product management portfolio and career planning case study." },
+      { name: "author", content: "Mohamed Yusuf" },
+      { property: "og:title", content: "Mohamed Yusuf | Product Management Portfolio" },
+      { property: "og:description", content: "Product decisions, prototype testing and launch planning by Mohamed Yusuf." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {

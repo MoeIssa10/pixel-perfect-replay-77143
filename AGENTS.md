@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Portfolio structure
+
+- Keep the full case study on the dedicated Work route and a short preview on the homepage so recruiters can choose the depth they read.
+- Use source prototype screenshots only and label any explanatory diagrams as explanations rather than prototype evidence.
