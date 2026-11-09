@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Mohamed Yusuf | Product Management Portfolio" },
       {
         property: "og:description",
-        content: "Case study: LinkedIn SkillPathway, from design sprint to a decision to delay launch and PRD.",
+        content: "Case study: LinkedIn SkillPathway, from design sprint to a decision to hold launch until fixes pass retesting.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -68,9 +68,7 @@ function Index() {
           className="grid-sidebar flex flex-col justify-between"
         >
           <a href="/" className="name-display block transition-opacity hover:opacity-80">
-            Mohamed
-            <br />
-            Yusuf
+            Mohamed Yusuf
           </a>
           <nav className="mb-8 flex flex-col gap-3">
             <a href="#about" className="nav-link">About</a>
@@ -102,7 +100,7 @@ function Index() {
               <span className="work-item-year">2026</span>
             </Link>
             <p className="body-text mt-6 max-w-lg">
-              A course plan for people changing careers. I built and tested a prototype, then recommended delaying launch to fix accuracy problems.
+              A course plan for people changing careers. I built and tested a prototype, then recommended holding launch until accuracy problems were fixed and retested.
             </p>
           </section>
         </motion.div>
@@ -138,16 +136,14 @@ function Index() {
       <Section id="about-full" title="About">
         <div className="space-y-6">
           <p className="body-text">
-            Marketing and International Business graduate with customer-facing work in Cairo and Edmonton.
+            I'm a marketing and international business graduate moving into product management. I'm looking for my first PM role.
           </p>
           <p className="body-text">
-            In telesales, I tailored pitches to what each customer needed and{" "}
+            In telesales, I tailored each pitch to what the customer needed and{" "}
             <span className="font-semibold text-foreground">raised qualified lead conversion by 25% in six months</span>.
-            At AKQA, I wrote creative briefs and prepared client quotations.
           </p>
           <p className="body-text">
-            Working with customers taught me to listen before suggesting a solution. I want to bring that experience
-            to my first product management role.
+            That work taught me to listen before suggesting a solution. I bring that habit to product decisions, as shown in my SkillPathway case study.
           </p>
         </div>
       </Section>
@@ -155,7 +151,7 @@ function Index() {
       <Section title="Education">
         <div className="space-y-8">
           {[
-            ["Bachelor's Degree in Marketing and International Business", "University of Greenwich, London, delivered at MSA University, Cairo"],
+            ["Bachelor's Degree in Marketing and International Business", "University of Greenwich, London, United Kingdom. Delivered at MSA University, Cairo, Egypt"],
             ["Product Management", "Udacity"],
             ["Social Media Marketing Certification", "Meta, via Coursera"],
           ].map(([t, s]) => (
