@@ -92,7 +92,7 @@ function Work() {
             <div className="accuracy-comparison"><div><p className="text-sm">Displayed plan total</p><p className="finding-value">4 hrs</p></div><ArrowRight size={24} /><div><p className="text-sm">Sum of course times</p><p className="finding-value">3 hrs 55 min</p></div></div>
             <p className="text-sm">A five minute difference. Small errors can make people question the rest of the plan.</p>
           </figure>
-          <p className="body-text">I also pushed back on moving the launch two weeks earlier. I wanted time to fix the problems and retest. The project did not launch, so there are no live user or business results.</p>
+          <p className="body-text">I also pushed back on moving the launch two weeks earlier. I wanted time to fix the problems and retest.</p>
         </Chapter>
         <Chapter id="evidence" title="Work behind the decisions">
           <ul className="evidence-list">
