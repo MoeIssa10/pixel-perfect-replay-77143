@@ -87,32 +87,6 @@ function Index() {
           </section>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid-secondary flex flex-col justify-between"
-          id="contact"
-        >
-          <div className="pt-8 lg:pt-16">
-            <h2 className="contact-heading">
-              Get in
-              <br />
-              touch
-            </h2>
-          </div>
-          <div className="flex flex-col gap-8 pb-8">
-            <div className="text-sm text-muted-foreground">
-              <p>Edmonton, Alberta</p>
-              <p>{currentTime}</p>
-            </div>
-            <div className="flex justify-end">
-              <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="group" aria-label="Contact Mohamed on LinkedIn">
-                <ArrowUpRight className="arrow-large transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2" />
-              </a>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       <Section id="about-full" title="About">
