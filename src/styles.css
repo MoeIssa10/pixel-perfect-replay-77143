@@ -146,10 +146,10 @@
 @layer components {
   body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .grid-layout { display: grid; grid-template-columns: 1fr; min-height: 100vh; }
-  @media (min-width: 1024px) { .grid-layout { grid-template-columns: 2fr 7fr 3fr; } }
-  .grid-sidebar, .grid-main, .grid-secondary { padding: 1.5rem; }
+  @media (min-width: 1024px) { .grid-layout { grid-template-columns: 2fr 10fr; } }
+  .grid-sidebar, .grid-main { padding: 1.5rem; }
   @media (min-width: 1024px) {
-    .grid-sidebar, .grid-main, .grid-secondary { padding: 2rem; }
+    .grid-sidebar, .grid-main { padding: 2rem; }
     .grid-sidebar, .grid-main { border-right: 1px solid var(--color-border); }
   }
   .name-display { font-size: 1.5rem; line-height: 1.1; white-space: nowrap; font-weight: 500; color: var(--color-foreground); }
