@@ -1,7 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { useEffect, useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,23 +41,6 @@ const Section = ({ id, title, children }: { id?: string; title: string; children
 );
 
 function Index() {
-  const [currentTime, setCurrentTime] = useState("");
-
-  useEffect(() => {
-    const update = () =>
-      setCurrentTime(
-        new Date().toLocaleTimeString("en-US", {
-          timeZone: "America/Edmonton",
-          hour: "numeric",
-          minute: "2-digit",
-          hour12: true,
-        }),
-      );
-    update();
-    const id = setInterval(update, 1000);
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <main className="min-h-screen bg-background text-foreground">
       <div className="grid-layout">
@@ -73,7 +56,6 @@ function Index() {
           <nav className="mb-8 flex flex-col gap-3">
             <a href="#about" className="nav-link">About</a>
             <Link to="/work" className="nav-link">Work</Link>
-            <a href="#contact" className="nav-link">Contact</a>
           </nav>
         </motion.aside>
 
@@ -105,32 +87,6 @@ function Index() {
           </section>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid-secondary flex flex-col justify-between"
-          id="contact"
-        >
-          <div className="pt-8 lg:pt-16">
-            <h2 className="contact-heading">
-              Get in
-              <br />
-              touch
-            </h2>
-          </div>
-          <div className="flex flex-col gap-8 pb-8">
-            <div className="text-sm text-muted-foreground">
-              <p>Edmonton, Alberta</p>
-              <p>{currentTime}</p>
-            </div>
-            <div className="flex justify-end">
-              <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="group" aria-label="Contact Mohamed on LinkedIn">
-                <ArrowUpRight className="arrow-large transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2" />
-              </a>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       <Section id="about-full" title="About">
